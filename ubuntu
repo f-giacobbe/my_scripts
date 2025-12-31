@@ -1,0 +1,10 @@
+op=$1
+vm_path="Specify"
+
+case $op in
+	"start") vmrun -T fusion start "$vm_path" nogui;;
+	
+	"stop") vmrun -T fusion stop "$vm_path" nogui;;
+
+	*) echo "Wrong command";;
+esac
