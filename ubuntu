@@ -1,8 +1,8 @@
 op=$1
-vm_path="Specify"
+vm_path="/Volumes/FrancescoSSD/Virtual Machines/Ubuntu 64-bit Arm Server 24.04.1.vmwarevm"
 
 case $op in
-	"start") vmrun -T fusion start "$vm_path" nogui;;
+	"start") vmrun -T fusion start "$vm_path" nogui 2> /dev/null;;
 	
 	"stop") vmrun -T fusion stop "$vm_path" nogui;;
 
